@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sonuçlarım</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0a020;
+}
+
+.topbar {
+    background: #111;
+    color: white;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+}
+
+/* Sol Menü */
+.sidebar {
+    width: 300px;
+    background: #222;
+    color: white;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.sidebar h3 {
+    color: #ffb74d;
+    margin-bottom: 20px;
+}
+
+.menu-item {
+    padding: 12px;
+    border: 1px solid #ffb74d;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.menu-item:hover {
+    background: #333;
+}
+
+/* İçerik */
+.content {
+    flex: 1;
+    padding: 40px;
+}
+
+.card {
+    background: #f6d090;
+    padding: 30px;
+    border-radius: 12px;
+    border: 3px solid white;
+}
+
+.result-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.link {
+    color: blue;
+    cursor: pointer;
+    text-decoration: underline;
+}
+</style>
+</head>
+
+<body>
+
+<div class="topbar">
+    <div>Sonuç Paneli</div>
+    <div>Çıkış Yap</div>
+</div>
+
+<div class="container">
+
+    <div class="sidebar">
+        <h3>İŞLEMLER</h3>
+        <div class="menu-item">Başvurularım</div>
+        <div class="menu-item">Sonuçlarım</div>
+        <div class="menu-item">Profilim</div>
+    </div>
+
+    <div class="content">
+        <h2>Sonuçlarım</h2>
+
+        <div class="card">
+
+            <div class="result-row">
+                <div>2026 MSÜ Sonuçları</div>
+                <div class="link" onclick="ac()">Görüntüle</div>
+            </div>
+
+        </div>
+    </div>
+
+</div>
+
+<script>
+function ac() {
+    window.location.href = "dosya.pdf";
+}
+</script>
+
+</body>
+</html>
